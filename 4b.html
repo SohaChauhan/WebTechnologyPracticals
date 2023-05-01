@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4b</title>
+</head>
+
+<body style="background-color: #fffaf0; color: #000; text-align: center; margin-top: 50px;">
+    <div style="font-size: 40px;">Guess the number between 1 and 200</div>
+    <hr style="color:#29274C;">
+    <div style="margin-top: 50px;">
+        <input type="number" id="input" placeholder="Enter your guess" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 20px; color: #2a2a2a; accent-color: #000;">
+        <button onclick="checkGuess()" style="background-color: #000;color: #fff;padding: 10px 20px;border: none;border-radius: 5px;font-size: 20px;cursor: pointer;margin-left: 10px;">Guess</button></div>
+    <div id="result" style="margin-top: 30px; font-size: 20px;">Attempts left: <span id="attempts">5</span></div>
+    <div style="font-size: 20px;margin-top: 30px;color: #000;"></div>
+    <script>
+        const randomNumber = Math.floor(Math.random() * 200) + 1;
+        let attempts = 5;
+
+        function checkGuess() {
+            const guess = Number(document.getElementById("input").value);
+            if (guess === randomNumber) {
+                document.body.style.backgroundColor = "yellow";
+                document.getElementById("result").innerHTML = `Congratulations, you guessed the number in ${6 - attempts} attempts!`;
+            } else {
+                attempts -= 1;
+                document.getElementById("attempts").textContent = attempts;
+                if (attempts === 0) {
+                    document.body.style.backgroundColor = "orange";
+                    document.getElementById("result").innerHTML = `Sorry, you ran out of attempts. The number was ${randomNumber}.`;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

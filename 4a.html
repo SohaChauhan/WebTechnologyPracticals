@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4a</title>
+</head>
+
+<body style="background-color: #fefee3;">
+    <div style="margin-top: 50px;"><span style="font-size: 40px; margin-left: 330px; color: #2c6e49; padding-right: 10px;">Enter the amount deposited in the bank:</span> <span><input type="text" id="amt" placeholder="input here" style="background-color: #d68c45; color: #fefee3; height: 40px; width: 200px; border-radius: 10px; text-align: center; font-size: 20px; border-width: 0px; accent-color: #2c6e49;"></span></div>
+    <br>
+    <div style="margin-left: 690px;margin-top: 40px;"><button onclick="denomination()" style="height: 40px; width: 150px; background-color: #ffc9b9; border-radius: 36px; border-width: 0px; outline-style: auto;  accent-color:#fefee3 ; font-size: 20px; color: #2c6e49;">Enter</button></div>
+    <div id="result" style="font-size: 40px; text-align: center; margin-top: 50px; color: #d68c45;"></div>
+    <script>
+        function denomination() {
+            var amt = parseInt(document.getElementById("amt").value);
+            var count = [0, 0, 0, 0, 0, 0, 0];
+            var denom = [100, 50, 20, 10, 5, 2, 1];
+            for (let i = 0; i < denom.length; i++) {
+                const e = denom[i];
+                if (amt > e || amt > 0) {
+                    count[i] = parseInt(amt / e);
+                    amt %= e;
+                }
+            }
+            let ans = "";
+            for (let i = 0; i < count.length; i++) {
+                const e = count[i];
+                if (e != 0) {
+                    ans += `${e}-${denom[i]}'s `;
+                }
+
+            }
+            document.getElementById("result").innerHTML = ans;
+
+        }
+    </script>
+</body>
+
+</html>

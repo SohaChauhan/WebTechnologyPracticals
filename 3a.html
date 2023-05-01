@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>3a</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body style="text-align: center; background-color: #ffffb0; color: #9a351a;">
+    <div style="border-style: solid;border-width: 0px; border-bottom-width: 2px; text-align: center; background-color: #ffbc66; padding-top: 1px;">
+        <h1>Check if the first number is multiple of second number</h1>
+    </div>
+    <div style="font-size: 30px; margin-top: 20px; ">
+        <label>Enter first integer:</label>
+    </div>
+    <div>
+        <input style="width:200px; height: 35px;margin-top: 19px;margin-bottom: 19px; text-align: center; font-size: 25px; accent-color:#ffbc66;border-radius: 10px; background-color: #9a351a; border-width: 1px ; border-color: #ffbc66; color: #ffbc66;" id="num1"
+            placeholder="input here ">
+    </div>
+    <div style="font-size: 30px; margin-top: 20px;">
+        <label>Enter second integer:</label>
+    </div>
+    <div>
+        <input style="width:200px; height: 35px;margin-top: 19px;margin-bottom: 45px; text-align: center; font-size: 25px; accent-color:#ffbc66;border-radius: 10px; background-color: #9a351a; border-width: 1px ; border-color: #ffbc66; color: #ffbc66;" id="num2"
+            placeholder="input here">
+    </div>
+    <button style=" font-size:25px;height: 50px;width: 170px; color: #ffbc66; background-color:#9a351a; border-radius: 36px; accent-color: #ffbc66; outline-style: auto; border-width: 0px;" onclick="check()">Check</button>
+    <!-- <input style="height: 30px;width: 70px;" type="reset" value="reset"></input> -->
+    <div id="demo " style="font-size: 40px; margin-top: 30px; "></div>
+    <script>
+        function check() {
+            const a = parseInt(document.getElementById('num1').value);
+            const b = parseInt(document.getElementById('num2').value);
+
+            if (a % b === 0) {
+                document.getElementById("demo ").innerHTML =
+                    `Yes, ${a} is multiple of ${b}.`;
+            } else {
+                document.getElementById("demo ").innerHTML =
+                    `No, ${a} is not multiple of ${b}.`;
+            }
+        }
+    </script>
+</body>
+
+</html>

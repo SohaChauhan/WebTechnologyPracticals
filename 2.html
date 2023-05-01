@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="external.css">
+    <style>
+        body {
+            background-color: #2f5972;
+            font-size: 25px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>
+            <img src="logo.png" alt="logo" style="height: 100px;">
+        </span>
+        <span class="font">
+            Stationery.com
+        </span>
+    </div>
+    <hr style="color:#f3cd74;">
+    <br>
+    <table id="table1">
+        <tr>
+            <th class="tab">
+                <font id="tabhead">Product</font>
+            </th>
+
+            <th class="tab">
+                <font id="tabhead">Cost (in Rupees)</font>
+            </th>
+        </tr>
+        <tr>
+            <td class="tab">
+                Pen
+            </td>
+            <td class="tab">
+                10
+            </td>
+        </tr>
+        <tr>
+            <td class="tab">
+                Pencil
+            </td>
+            <td class="tab">
+                5
+            </td>
+        </tr>
+        <tr>
+            <td class="tab">
+                Wax Crayons
+            </td>
+            <td class="tab">
+                20
+            </td>
+        </tr>
+        <tr>
+            <td class="tab">
+                Pencil Colours
+            </td>
+            <td class="tab">
+                20
+            </td>
+        </tr>
+        <tr>
+            <td class="tab">
+                15cm Ruler
+            </td>
+            <td class="tab">
+                5
+            </td>
+        </tr>
+        <tr>
+            <td class="tab">
+                A4 size Printing Papers-100pages
+            </td>
+            <td class="tab">
+                200
+            </td>
+        </tr>
+    </table>
+    <br>
+    <form action="thanks.html">
+        <div>
+            <span class="font2">Add Items to Your Cart!</span>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <label>
+                    Pen:
+                    </label>
+                </td>
+                <td>
+                    <input type="number" placeholder="0" class="textbox" style="width: 55px; text-align:center">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                    Pencil:
+                </label>
+                </td>
+
+                <td>
+                    <input type="number" placeholder="0" class="textbox" style="width: 55px; text-align:center">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                    Wax Crayons:
+                </label>
+                </td>
+
+                <td>
+                    <input type="number" placeholder="0" class="textbox" style="width: 55px; text-align:center">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                    Pencil Colours:
+                </label>
+                </td>
+
+                <td>
+                    <input type="number" placeholder="0" class="textbox" style="width: 55px; text-align:center">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                    15cm Ruler:
+                </label>
+                </td>
+
+                <td>
+                    <input type="number" placeholder="0" class="textbox" style="width: 55px; text-align:center">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                    A4 size Printing Papers-100pages:
+                </label>
+                </td>
+
+                <td>
+                    <input type="number" placeholder="0" class="textbox" style="width: 55px; text-align:center">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <div>
+            <span class="font2">Enter Your Detials</span>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <label>
+                    Full Name:
+                </label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Type here" required class="textbox">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                    Email:
+                </label>
+                </td>
+                <td>
+                    <input type="email" placeholder="Type here" required class="textbox">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                    City:
+                </label>
+                </td>
+
+                <td>
+                    <select name="City" id="City" class="textbox">
+                    <option value="Select">Select</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Rajkot">Rajkot</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Vadodara">Vadodara</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                    Address:
+                </label>
+                </td>
+                <td><textarea name="Add" id="" cols="50" rows="2" placeholder="Type here" required class="textbox"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                    Fast Delievery:
+                </label>
+                </td>
+
+                <td>
+                    <input type="radio" name="fast" id="Yes" class="textbox" style="accent-color: #5dcad1;"><label>Yes</label>
+                    <input type="radio" name="fast" id="No" checked class="textbox" style="accent-color: #5dcad1; border-color: #1c2143;"><label>No</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                    Prefered Date of Delievery:
+                </label>
+                </td>
+
+                <td>
+                    <input type="date" name="date" id="date" required class="textbox">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+
+        <div>
+            <input type="submit" value="Place Order" class="button">
+            <input type="reset" class="button">
+        </div>
+    </form>
+    <br>
+    <hr style="color: #5dcad1;">
+    <div>
+        <span class="font2">Want to Contact Us?</span>
+        <dl>
+            <dt style="color: #5dcad1;">Email:
+            <dd>
+                Stationery.com@gmail.com
+            </dd>
+            <br>
+            <dt style="color: #5dcad1;">Phone Number:</dt>
+            <dd>
+                +91 12345 67890
+            </dd>
+        </dl>
+    </div>
+</body>
+
+</html>

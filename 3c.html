@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3c</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="background-color: #d2fba4;">
+    <div style="font-size: 70px; text-align: center; color: #1d741b;">String Convertor</div>
+    <hr style="color: #1d741b;">
+    <div style="margin-top: 30px;"><span style="font-size: 40px; margin-left: 530px; color: #ff6260; padding-right: 10px;">Enter a string:</span> <span><input type="text" id="string" placeholder="e.g. HeLLo WoRLd" style="background-color: #5eb229; color: white; height: 40px; width: 200px; border-radius: 10px; text-align: center; font-size: 20px; border-width: 0px; accent-color: #1d741b;"></span></div>
+    <br>
+    <div style="margin-left: 690px;margin-top: 20px;"><button onclick="swapCase()" style="height: 30px; width: 150px; background-color: #ff6260; border-radius: 36px; border-width: 0px; outline-style: auto;  accent-color:#5eb229 ; font-size: 20px; color: #ffcbc4;">Swap Case</button></div>
+    <div id="result" style="font-size: 40px; text-align: center; margin-top: 50px; color: #1d741b;"><span id="result1"></span></div>
+    <script>
+        function swapCase() {
+            const string = document.getElementById("string").value;
+            let string2 = "";
+            for (let i = 0; i < string.length; i++) {
+                const char = string.charAt(i);
+                if (char >= 'A' && char <= 'Z') {
+                    string2 += char.toLowerCase();
+                } else if (char >= 'a' && char <= 'z') {
+                    string2 += char.toUpperCase();
+                } else {
+                    string2 += char;
+                }
+            }
+
+            document.getElementById("result").innerHTML = "Resultant string is " + string2 + ".";
+        }
+    </script>
+</body>
+
+</html>

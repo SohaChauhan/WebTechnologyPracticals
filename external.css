@@ -1,0 +1,56 @@
+.font {
+    color: #5dcad1;
+    font-size: 50px;
+    margin-left: 480px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+#table1 {
+    text-align: center;
+    background-color: #5dcad1;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #1c2143;
+    color: #2f5972;
+    border-collapse: collapse;
+    margin-left: 480px;
+}
+
+#tabhead {
+    color: #1c2143;
+    font-size: 30px;
+    font-style: oblique;
+}
+
+.tab {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #1c2143;
+    padding: 2px;
+}
+
+.font2 {
+    font-size: 50px;
+    color: #f3cd74;
+}
+
+.textbox {
+    background-color: #1c2143;
+    border-width: 1px;
+    border-color: #f3cd74;
+    text-align: justify;
+    color: #5dcad1;
+    accent-color: #f3cd74;
+}
+
+.button {
+    width: 150px;
+    height: 35px;
+    background-color: #f3cd74;
+    border-width: 2px;
+    border-color: #1c2143;
+    border-radius: 36px;
+    font-size: 17px;
+    color: #1c2143;
+}
